@@ -3,15 +3,6 @@ package com.keyin.domain.donor;
 import java.time.LocalDate;
 
 public class BloodDonor {
-    /*
-    o	Donor ID
-    o	First Name
-    o	Last Name
-    o	Date of Birth
-    o	Blood Type
-    o	Next Appointment
-    o	Last Donation Date
-    */
 
     private int id;
     private String firstName;
