@@ -12,59 +12,59 @@ public class BloodDonor {
     private LocalDate nextAppointmentDate;
     private LocalDate lastDonationDate;
 
-    public int getId() {
-        return id;
+    public BloodDonor(int id, String firstName, String lastName, LocalDate dateOfBirth, String bloodType,
+                      LocalDate nextAppointmentDate, LocalDate lastDonationDate) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.dateOfBirth = dateOfBirth;
+        this.bloodType = bloodType;
+        this.nextAppointmentDate = nextAppointmentDate;
+        this.lastDonationDate = lastDonationDate;
     }
 
     public void setId(int id) {
         this.id = id;
     }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
-
-    public String getLastName() {
-        return lastName;
-    }
-
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
-
-    public LocalDate getDateOfBirth() {
-        return dateOfBirth;
-    }
-
     public void setDateOfBirth(LocalDate dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
-
-    public String getBloodType() {
-        return bloodType;
-    }
-
     public void setBloodType(String bloodType) {
         this.bloodType = bloodType;
     }
-
-    public LocalDate getNextAppointmentDate() {
-        return nextAppointmentDate;
-    }
-
     public void setNextAppointmentDate(LocalDate nextAppointmentDate) {
         this.nextAppointmentDate = nextAppointmentDate;
     }
+    public void setLastDonationDate(LocalDate lastDonationDate) {
+        this.lastDonationDate = lastDonationDate;
+    }
 
+    public int getId() {
+        return id;
+    }
+    public String getFirstName() {
+        return firstName;
+    }
+    public String getLastName() {
+        return lastName;
+    }
+    public LocalDate getDateOfBirth() {
+        return dateOfBirth;
+    }
+    public String getBloodType() {
+        return bloodType;
+    }
+    public LocalDate getNextAppointmentDate() {
+        return nextAppointmentDate;
+    }
     public LocalDate getLastDonationDate() {
         return lastDonationDate;
     }
 
-    public void setLastDonationDate(LocalDate lastDonationDate) {
-        this.lastDonationDate = lastDonationDate;
-    }
 }

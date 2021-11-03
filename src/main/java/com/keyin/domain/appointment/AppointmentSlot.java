@@ -11,6 +11,16 @@ public class AppointmentSlot {
   private LocalTime endTime;
   private String bloodType;
 
+  public AppointmentSlot(int id, String location, LocalDate appointmentDate, LocalTime startTime,
+                         LocalTime endTime, String bloodType) {
+    this.id = id;
+    this.location = location;
+    this.appointmentDate = appointmentDate;
+    this.startTime = startTime;
+    this.endTime = endTime;
+    this.bloodType = bloodType;
+  }
+
   public void setBloodType(String bloodType) { this.bloodType = bloodType; }
   public void setId(int id) { this.id = id; }
   public void setLocation(String location) { this.location = location; }
